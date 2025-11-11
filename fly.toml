@@ -1,0 +1,20 @@
+# fly.toml app configuration file for rad-discord-bot
+# Discord bots don't need HTTP services - they connect via WebSocket
+
+app = 'rad-discord-bot-lingering-lake-3025'
+primary_region = 'iad'
+
+[build]
+
+# Environment variables are set via Fly secrets for security
+# Use: flyctl secrets set CONVEX_URL=... CONVEX_SITE_URL=... etc.
+[env]
+  CONVEX_ENVIRONMENT = 'prod'
+
+[processes]
+  app = 'bun run start'
+
+[[vm]]
+  memory = '256mb'
+  cpu_kind = 'shared'
+  cpus = 1
