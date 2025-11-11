@@ -8,7 +8,7 @@
 		"preinstall": "npx only-allow bun",
 		"dev": "concurrently \"bun:start\" \"bun:convex dev\" --names \"discord, convex\" --prefix-colors \"cyan,magenta\"",
 		"start": "bun run src/index.ts",
-		"build": "bunx tsc src/index.ts",
+		"build": "bunx tsc --noEmit",
 		"lint": "biome check --write"
 	},
 	"dependencies": {
