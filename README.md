@@ -68,7 +68,6 @@ Required environment variables:
 - `DISCORD_BOT_TOKEN` - Your Discord bot token (keep secret!)
 - `DISCORD_CLIENT_ID` - Your Discord application client ID
 - `CONVEX_URL` - Your Convex deployment URL
-- `CONVEX_SITE_URL` - Your Convex site URL
 - `THERAPY_INTAKE_URL` - The unique intake form URL for tracking
 
 Optional environment variables:
