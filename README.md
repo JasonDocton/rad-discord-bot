@@ -83,17 +83,23 @@ bun dev
 
 ### Setting up Fly.io Secrets
 
-Since `CONVEX_URL` and other sensitive values are not in `fly.toml`, you need to set them as Fly secrets:
+Since sensitive values are not in `fly.toml`, you need to set them as Fly secrets:
 
 ```bash
 # Set all required secrets for production
 flyctl secrets set \
   CONVEX_URL=https://your-deployment.convex.cloud \
-  CONVEX_SITE_URL=https://your-deployment.convex.site \
   DISCORD_BOT_TOKEN=your_discord_token \
   DISCORD_CLIENT_ID=your_client_id \
   THERAPY_INTAKE_URL=your_intake_form_url
+
+# Optional: Discord monitoring (for production alerts)
+flyctl secrets set \
+  DISCORD_MONITOR_CHANNEL_ID=your_channel_id \
+  DISCORD_MONITOR_WEBHOOK_URL=https://discord.com/api/webhooks/your_webhook
 ```
+
+**Note**: `CONVEX_SITE_URL` is not required for Fly.io. It's only used when running Convex serverless functions.
 
 ## Support
 
