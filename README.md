@@ -103,7 +103,6 @@ flyctl secrets set \
 ## Support
 
 - **Issues**: [GitHub Issues](https://github.com/JasonDocton/rad-discord-bot/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/JasonDocton/rad-discord-bot/discussions)
 - **Discord**: jasondocton
 
 - **[Consider Sponsoring YouAreRAD](https://github.com/sponsors/youarerad)**: Just $30 helps our non-profit cover the cost of mental health care for someone in need.
